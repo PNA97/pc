@@ -1,0 +1,15 @@
+//vars
+$default-font: "roboto-ex", sans-serif
+$gradient: linear-gradient (to left, #DF5950, #451046)
+$accent: #C89AFC
+
+
+//Fonts
+@mixin font($fname, $fstyle, $fweight, $furl)
+@include font('roboto-ex', normal, 400, '../fonts/Roboto/Roboto-Regular')
+@include font('roboto-ex', normal, 700, '../fonts/Roboto/Roboto-Bold')
+@include font('roboto-ex', normal, 500, '../fonts/Roboto/Roboto-Medium')
+
+@import "../libs/bootstrap-grid/bootstrap-grid.css"
+// Теперь необходимо показывать расширение .css
+
