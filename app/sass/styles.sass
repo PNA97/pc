@@ -1,0 +1,479 @@
+@import "config"
+
+h2
+  color: #ffffff
+  font-size: 48px
+  line-height: 67px
+  font-weight: 700
+
+h3
+  color: #ffffff
+  font-size: 24px
+  line-height: 34px
+  font-weight: 500
+
+p
+  font-size: 16px
+  line-height: 24px
+  color: rgba(#fff, .4)
+  font-weight: 200
+
+span
+  font-size: 36px
+  line-height: 50px
+  color: #ffffff
+  font-weight: 700
+
+section
+  margin-bottom: 230px
+
+//header
+.header
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 0
+  margin: 0
+  display: block
+  width: 100%
+  height: 100%
+
+
+.top-line
+  position: relative
+  text-align: center
+
+  .logo
+    position: absolute
+    top: 40px
+    left: 80px
+    width: 40px
+    height: 40px
+
+  .menu
+    position: absolute
+    top: 42px
+    left: 30%
+
+    ul
+      margin: 0
+      padding: 0
+
+      li
+        display: inline-block
+        padding: 0 23px
+
+        a
+          color: #ffffff
+          font-size: 16px
+          font-weight: 200
+          font-family: roboto-ex, sans-serif
+          text-decoration: none
+          transition: color .25s ease
+
+          &:hover
+            color: $accent
+
+.button
+  position: absolute
+  outline: none
+  width: 183px
+  height: 44px
+  font-size: 16px
+  font-family: roboto-ex, sans-serif
+  font-weight: 400
+  color: #ffffff
+  border: none
+  border-radius: 50px
+  transition: background .25s ease
+  padding: 0
+
+  &.gr_1
+    top: 33px
+    right: 40px
+    background: linear-gradient(to right, #c89afc, #7C6AFA)
+
+    &:hover
+      background: linear-gradient(to right, #d38ff8, #a05bf5)
+
+.title
+  position: absolute
+  left: 20%
+  top: 30%
+  width: 700px
+
+  h1
+    color: #ffffff
+    font-weight: 700
+    font-size: 64px
+    line-height: 90px
+    margin-bottom: 50px
+    margin-top: 0
+    text-align: left
+
+
+.timer
+  display: inline-flex
+  width: 498px
+
+  .timer_item
+    width: 108px
+    height: 112px
+    background-color: #121212
+    transition: opacity .25s ease
+
+    &:not(:first-child)
+      margin-left: 30px
+
+    &:hover
+      background-color: rgba($accent, .5)
+
+    .time
+      font-weight: 700
+      font-size: 36px
+      color: #ffffff
+      line-height: 50px
+      margin: 20px 30px 0 30px
+      text-align: center
+
+    .time_dsc
+      width: 47px
+      font-size: 16px
+      line-height: 22px
+      color: rgba(#fff, .4)
+      margin: 0 30px
+      text-align: center
+
+.bottom-line
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 130px
+  background-color: #121212
+
+  .button
+    &.gr_2
+      background: linear-gradient(to right, #DF5950, #451046)
+      top: 43px
+
+      &:hover
+        background: linear-gradient(to right, #e36d66, #822085)
+
+  .students
+    margin: 36px 81px
+    width: 100%
+
+    p
+      margin: 0 0 10px 0
+
+      span
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+        color: #ffffff
+
+      .sp-1
+        margin-left: 101px
+
+      .sp-2
+        margin-left: 30px
+
+  .statistic
+    margin-top: 35px
+    margin-left: 81px
+
+    p
+      margin-bottom: 8px
+
+      span
+        font-size: 16px
+        font-weight: 200
+        line-height: 24px
+        color: #ffffff
+        margin-left: 30px
+
+    .statistic-line
+      background-image: url("../img/svg/statistic-line.svg")
+      background-repeat: no-repeat
+      width: 100%
+      height: 6px
+      border-right: #ffffff 274px solid
+
+    p
+      display: flex
+      justify-content: space-between
+      margin-top: 5px
+
+      span
+        color: rgba(#fff, .4)
+
+//sections
+.s-desc
+  &__frame
+    width: 526px
+    height: 499px
+    background-image: url("../img/svg/frame .svg")
+    margin-top: 200px
+    position: relative
+
+    img
+      position: absolute
+      top: 90px
+      left: 40px
+      animation: hide 3s infinite
+      @keyframes hide
+        from
+          top: 90px
+          left: 40px
+        25%
+          top: 70px
+          left: 40px
+        50%
+          top: 70px
+          left: 30px
+        75%
+          top: 90px
+          left: 30px
+        to
+          top: 90px
+          left: 40px
+
+  &__description
+    width: 100%
+    height: 100%
+    margin: 50% 10%
+
+    p
+      color: #ffffff
+
+.s-start
+  &__title
+    position: relative
+
+    h2
+      position: absolute
+      top: 18px
+      left: 120px
+      margin: 0
+
+  &__text
+    margin: 49px 0
+    text-align: left
+    width: 411px
+    z-index: 1
+
+  &__interest
+    margin-top: 80px
+
+    .img-1
+      margin-top: 20px
+
+    .descr-1
+      margin-top: 35px
+      width: 308px
+      height: 80px
+
+    .img-2
+      margin-top: 30px
+
+    .descr-2
+      margin-top: 45px
+      width: 308px
+      height: 80px
+
+    .img-3
+      margin-top: 45px
+
+    .descr-3
+      margin-top: 60px
+      width: 308px
+      height: 80px
+
+    .img-4
+      margin-top: 55px
+
+    .descr-4
+      margin-top: 70px
+      width: 308px
+      height: 80px
+
+.s-start__interest-item
+  &.item-2
+    margin-left: 31px
+
+  &.item-3
+    margin-left: 60px
+
+  &.item-4
+    margin-left: 90px
+
+.s-profession
+  &__title
+    text-align: center
+    margin: 200px 0 120px
+
+
+  &__item
+    text-align: center
+
+    img
+      margin-bottom: 50px
+
+    h3
+      margin-bottom: 30px
+
+.s-partners
+  &__title
+    position: relative
+    margin-bottom: 60px
+
+    h2
+      position: absolute
+      top: 0
+      left: 120px
+      margin: 0
+
+  &__brands
+    .col-md-3
+    padding: 0
+
+    &-item
+      transition: background .25s ease
+      &:hover
+        background: rgba(#fff, .3)
+      &.down
+        border-bottom: none
+
+      &.nrb
+        border-right: none
+      border-bottom: rgba(#fff, .3) 1px solid
+      border-right: rgba(#fff, .3) 1px solid
+
+      img
+        margin: 30px 45px
+
+.s-training
+  &__title
+    text-align: center
+
+    img
+      margin-bottom: 76px
+
+    p
+      margin-bottom: 80px
+
+  &__program
+    &-item
+      text-align: right
+      position: relative
+      margin-bottom: 87px
+
+      &.right
+        text-align: left
+        margin-top: 96px
+
+        img
+          left: -79px
+
+      p
+        margin-bottom: 15px
+        margin-right: 20px
+
+      &-desc
+        font-size: 18px
+        line-height: 29px
+        color: #ffffff
+        font-weight: 200
+        margin-right: 20px
+
+      img
+        position: absolute
+        top: 50px
+
+    &-timeline
+      position: relative
+
+      img
+        position: absolute
+        left: 11px
+
+.s-teachers
+  &__title
+    position: relative
+    margin-bottom: 113px
+
+    h2
+      position: absolute
+      top: 18px
+      left: 120px
+      margin: 0
+
+  &__items
+    text-align: center
+    &-item
+      img
+        margin-bottom: 16px
+        transition: zoom 5s ease
+        &:hover
+          zoom: 1.1
+      h3
+        margin-bottom: 15px
+      p
+        color: rgba(#fff, .8)
+        margin-bottom: 35px
+      a
+        .button
+          position: relative
+          background: transparent
+          border: #E5E5E5 1px solid
+          transition: background .25s ease
+          &:hover
+            background: rgba(#fff, .3)
+            border: #121212
+
+.s-footer
+  &__title
+    text-align: center
+    h3
+      margin-bottom: 30px
+  &__mail
+    text-align: center
+    position: relative
+    .button
+      position: absolute
+      background: linear-gradient(to right, #DF5950, #451046)
+      left: 54%
+      transition: background .25s ease
+      &:hover
+        background: linear-gradient(to right, #e36d66, #822085)
+
+    input
+      position: absolute
+      left: 36%
+      width: 400px
+      height: 44px
+      background: rgba(#fff, .25)
+      color: rgba(#fff, .8)
+      font-size: 14px
+      line-height: 22px
+      font-weight: 200
+      outline: none
+      border: none
+      padding-left: 30px
+      border-radius: 50px
+      &:hover
+        background: rgba(#fff, .3)
+  &__soc
+    text-align: center
+    margin-top: 120px
+    a
+      .button
+        position: relative
+        width: 50px
+        height: 50px
+        background: linear-gradient(to right, #d38ff8, #a05bf5)
+        margin: 0 15px 30px
+        transition: background .25s ease
+        &:hover
+          background: linear-gradient(to right, #f58ff8, #b98bff)
